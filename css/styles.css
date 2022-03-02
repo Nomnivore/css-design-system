@@ -1,0 +1,313 @@
+/* 
+ * DESIGN SYSTEM V1
+ *
+ * Recommended to be used with normalize.css:
+ * https://necolas.github.io/normalize.css/
+ *
+ * Uses Roboto-400 from Google
+*/
+
+:root {
+  /* * Color styles */
+  --clr-brand-primary-100: #e8defd;
+  --clr-brand-primary-200: #d1befb;
+  --clr-brand-primary-300: #b99dfa;
+  --clr-brand-primary-400: #a27df8;
+  --clr-brand-primary-500: #8b5cf6;
+  --clr-brand-primary-600: #5d1cf2;
+  --clr-brand-primary-700: #420bc0;
+  --clr-brand-primary-800: #2c0780;
+  --clr-brand-primary-900: #160440;
+  --clr-brand-secondary-100: #fff5cb;
+  --clr-brand-secondary-200: #ffec97;
+  --clr-brand-secondary-300: #fee462;
+  --clr-brand-secondary-400: #fedb2e;
+  --clr-brand-secondary-500: #f7ce01;
+  --clr-brand-secondary-600: #c6a201;
+  --clr-brand-secondary-700: #947901;
+  --clr-brand-secondary-800: #635300;
+  --clr-brand-secondary-900: #312900;
+  --clr-brand-tertiary-100: #ffe9dc;
+  --clr-brand-tertiary-200: #ffd4b9;
+  --clr-brand-tertiary-300: #ffbe95;
+  --clr-brand-tertiary-400: #ffa972;
+  --clr-brand-tertiary-500: #ff934f;
+  --clr-brand-tertiary-600: #ff6a0c;
+  --clr-brand-tertiary-700: #c84d00;
+  --clr-brand-tertiary-800: #863400;
+  --clr-brand-tertiary-900: #431a00;
+  --clr-surface-white: #ffffff;
+  --clr-surface-black: #000000;
+  --clr-surface-gray-50: #fafafa;
+  --clr-surface-gray-100: #f6f6f6;
+  --clr-surface-gray-200: #dbdbdb;
+  --clr-surface-gray-300: #bfbfbf;
+  --clr-surface-gray-400: #a4a4a4;
+  --clr-surface-gray-500: #898989;
+  --clr-surface-gray-600: #6d6d6d;
+  --clr-surface-gray-700: #525252;
+  --clr-surface-gray-800: #373737;
+  --clr-surface-gray-900: #1b1b1b;
+  --clr-surface-slate-50: #f8fafc;
+  --clr-surface-slate-100: #f1f5f9;
+  --clr-surface-slate-200: #e2e8f0;
+  --clr-surface-slate-300: #cbd5e1;
+  --clr-surface-slate-400: #94a3b8;
+  --clr-surface-slate-500: #64748b;
+  --clr-surface-slate-600: #475569;
+  --clr-surface-slate-700: #334155;
+  --clr-surface-slate-800: #1e293b;
+  --clr-surface-slate-900: #0f172a;
+  --clr-source-brand-primary: #8b5cf6;
+  --clr-source-brand-secondary: #f7ce01;
+  --clr-source-brand-tertiary: #ff934f;
+  --clr-source-surface-white: #f6f6f6;
+  --clr-source-surface-black: #1b1b1b;
+  --clr-source-surface-slate: #334155;
+  --clr-source-semantic-success: #79c115;
+  --clr-source-semantic-info: #3eb8e8;
+  --clr-source-semantic-warning: #ffdb3f;
+  --clr-source-semantic-error: #ff4528;
+  --clr-semantic-success-100: #e5f9ca;
+  --clr-semantic-success-200: #ccf394;
+  --clr-semantic-success-300: #b2ee5f;
+  --clr-semantic-success-400: #98e829;
+  --clr-semantic-success-500: #79c115;
+  --clr-semantic-success-600: #619a11;
+  --clr-semantic-success-700: #49740d;
+  --clr-semantic-success-800: #304d08;
+  --clr-semantic-success-900: #182704;
+  --clr-semantic-info-100: #d8f1fa;
+  --clr-semantic-info-200: #b2e3f6;
+  --clr-semantic-info-300: #8bd4f1;
+  --clr-semantic-info-400: #65c6ed;
+  --clr-semantic-info-500: #3eb8e8;
+  --clr-semantic-info-600: #199ed2;
+  --clr-semantic-info-700: #13769e;
+  --clr-semantic-info-800: #0d4f69;
+  --clr-semantic-info-900: #062735;
+  --clr-semantic-warning-100: #fff8d9;
+  --clr-semantic-warning-200: #fff1b2;
+  --clr-semantic-warning-300: #ffe98c;
+  --clr-semantic-warning-400: #ffe265;
+  --clr-semantic-warning-500: #ffdb3f;
+  --clr-semantic-warning-600: #fecf00;
+  --clr-semantic-warning-700: #bf9b00;
+  --clr-semantic-warning-800: #7f6700;
+  --clr-semantic-warning-900: #403400;
+  --clr-semantic-error-100: #ffdad4;
+  --clr-semantic-error-200: #ffb5a9;
+  --clr-semantic-error-300: #ff8f7e;
+  --clr-semantic-error-400: #ff6a53;
+  --clr-semantic-error-500: #ff4528;
+  --clr-semantic-error-600: #ec2000;
+  --clr-semantic-error-700: #b11800;
+  --clr-semantic-error-800: #761000;
+  --clr-semantic-error-900: #3b0800;
+
+  /* Font styles */
+  --font-family-primary: "Roboto", sans-serif;
+
+  /* Font sizes */
+  --fs-display-xl: 4.25rem;
+  --fs-display: 3.56rem;
+  --fs-heading-1: 3rem;
+  --fs-heading-2: 2.5rem;
+  --fs-heading-3: 2.06rem;
+  --fs-heading-4: 1.75rem;
+  --fs-heading-5: 1.44rem;
+  --fs-heading-6: 1.44rem;
+
+  --fs-paragraph-large: 1.19rem;
+  --fs-paragraph-normal: 1rem;
+
+  --fs-subtitle-normal: 1rem;
+  --fs-subtitle-small: 0.88rem;
+  --fs-caption: 0.81rem;
+
+  --fs-btn-xl: 1.19rem;
+  --fs-btn-large: 1rem;
+  --fs-btn-normal: 0.88rem;
+  --fs-btn-small: 0.75rem;
+  --fs-btn-tiny: 0.62rem;
+  --fs-label: 0.75rem;
+
+  /* Font weights */
+  --fw-extra-bold: 800;
+  --fw-bold: bold;
+  --fw-medium: 500;
+
+  /* Line heights */
+  /* This is simplified from the original design system, and 
+     contains as few variables as possible. */
+  --lh-display: 1.18;
+  --lh-heading: 1.25;
+  --lh-subtitle: 1.2;
+  --lh-paragraph: 1.5;
+  --lh-caption: 1.25;
+  --lh-label: 1.33;
+  --lh-btn-large: 1;
+  --lh-btn-normal: 1.14;
+  --lh-btn-small: 1.33;
+  --lh-btn-tiny: 1.6;
+
+  /* Letter spacing */
+  --ls-subtitle: 0.015em;
+  --ls-label: 0.05em;
+  --ls-btn: 0.05em;
+  --ls-btn-xl: 0.025em;
+}
+
+/* * base styles */
+body {
+  font-family: var(--font-family-primary);
+  margin: 0;
+}
+
+/* button {
+  font-size: var(--fs-btn-normal);
+} */
+
+/* * font classes */
+/* !! Some base styles are defined here !! */
+.text-dxl {
+  font-size: var(--fs-display-xl);
+  line-height: var(--lh-display);
+  font-weight: var(--fw-extra-bold);
+}
+
+.text-d {
+  font-size: var(--fs-display);
+  line-height: var(--lh-display);
+  font-weight: var(--fw-extra-bold);
+}
+
+/* h1-h6 tags are not styled by default due to */
+/* a difference in semantic meaning vs style */
+
+.text-h1 {
+  font-size: var(--fs-heading-1);
+  line-height: var(--lh-heading);
+  font-weight: var(--fw-extra-bold);
+}
+
+.text-h2 {
+  font-size: var(--fs-heading-2);
+  line-height: var(--lh-heading);
+  font-weight: var(--fw-extra-bold);
+}
+
+.text-h3 {
+  font-size: var(--fs-heading-3);
+  line-height: var(--lh-heading);
+  font-weight: var(--fw-bold);
+}
+
+.text-h4 {
+  font-size: var(--fs-heading-4);
+  line-height: var(--lh-heading);
+  font-weight: var(--fw-bold);
+}
+
+.text-h5 {
+  font-size: var(--fs-heading-5);
+  line-height: var(--lh-heading);
+  font-weight: var(--fw-bold);
+}
+
+.text-h6 {
+  font-size: var(--fs-heading-6);
+  line-height: var(--lh-heading);
+  font-weight: var(--fw-medium);
+}
+
+.text-sub {
+  font-size: var(--fs-subtitle-normal);
+  line-height: var(--lh-subtitle);
+  font-weight: normal;
+  letter-spacing: var(--ls-subtitle);
+}
+
+.text-sub-sm {
+  font-size: var(--fs-subtitle-small);
+  line-height: var(--lh-subtitle);
+  font-weight: var(--fw-medium);
+  letter-spacing: var(--ls-subtitle);
+}
+
+/* ! BASE STYLE DEFINITION */
+p,
+.text-p {
+  font-size: var(--fs-paragraph-normal);
+  line-height: var(--lh-paragraph);
+  font-weight: normal;
+}
+
+.text-p-lg {
+  font-size: var(--fs-paragraph-large);
+  line-height: var(--lh-paragraph);
+  font-weight: normal;
+}
+
+.text-cap {
+  font-size: var(--fs-caption);
+  line-height: var(--lh-caption);
+  font-weight: normal;
+}
+
+.text-lbl {
+  font-size: var(--fs-label);
+  line-height: var(--lh-label);
+  font-weight: var(--fw-medium);
+  letter-spacing: var(--ls-label);
+}
+
+/* ! BASE STYLE DEFINITION */
+button,
+.text-btn {
+  font-size: var(--fs-btn-normal);
+  line-height: var(--lh-btn-normal);
+  font-weight: var(--fw-bold);
+  letter-spacing: var(--ls-btn);
+}
+
+.text-btn-sm {
+  font-size: var(--fs-btn-small);
+  line-height: var(--lh-btn-small);
+  font-weight: var(--fw-bold);
+  letter-spacing: var(--ls-btn);
+}
+
+.text-btn-xs {
+  font-size: var(--fs-btn-tiny);
+  line-height: var(--lh-btn-tiny);
+  font-weight: var(--fw-bold);
+  letter-spacing: var(--ls-btn);
+}
+
+.text-btn-lg {
+  font-size: var(--fs-btn-large);
+  line-height: var(--lh-btn-large);
+  font-weight: var(--fw-medium);
+  letter-spacing: var(--ls-btn);
+}
+
+.text-btn-xl {
+  font-size: var(--fs-btn-xl);
+  line-height: var(--lh-btn-large);
+  font-weight: var(--fw-medium);
+  letter-spacing: var(--ls-btn-xl);
+}
+
+/* * utility classes */
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.underline {
+  text-decoration: underline;
+}
